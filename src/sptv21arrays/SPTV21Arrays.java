@@ -5,7 +5,6 @@
  */
 package sptv21arrays;
 
-import java.util.Arrays;
 import java.util.Random;
 
 /**
@@ -47,7 +46,7 @@ public class SPTV21Arrays {
         int sumDown = 0;
         int sumUp = 0;
         int lineSum = 0;
-        int[] sumVert =new ;
+        int n = 0;
         int arr2[][] = new int[5][5];
         for(int i=0;i<arr2.length;i++){
 
@@ -65,7 +64,7 @@ public class SPTV21Arrays {
                 if(j == n-1 - i)sumUp+=arr2[i][j];
                 sum += arr2[i][j];
                 lineSum += arr2[i][j];
-                lineDown += arr2[i][j];
+
                 
                 
             }
@@ -75,8 +74,6 @@ public class SPTV21Arrays {
             lineSum = 0;
 
         }
-        System.out.print("sum = "+ sum);
-        System.out.print("sum = "+ sum);
         System.out.println("sum = "+ sum);
         System.out.println("max = "+ max);
         System.out.println("min = "+ min);
